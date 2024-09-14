@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- kalo menggunakan type ='module' akan error karena tidak bisa di ekspos keluar -->
+    <script type="module" src="scripts/say.js"></script>
+</head>
+<body>
+    <script type="module">//kita ganti jadi type module
+        //walau masi export masi error karena tidak make import
+        import{sayHello, sayGoodBye, name} from './scripts/say.js'
+        sayHello("ucup;");
+        sayGoodBye("ucup;");
+
+        console.info(name);
+    </script>
+</body>
+</html>

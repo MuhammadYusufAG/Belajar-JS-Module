@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+
+        //menggunakan import * as alias from '';
+        //digunakan jiga exportnya banyak
+
+        import * as yusuf from './scripts/export-module-object.js';
+
+        console.info(yusuf.firstName);
+        console.info(yusuf.middleName);
+        console.info(yusuf.lastName);
+
+        yusuf.hello();
+
+        const person = new yusuf.Person();
+
+    </script>
+</body>
+</html>

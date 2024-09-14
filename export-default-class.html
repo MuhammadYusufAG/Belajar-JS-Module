@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        //import alias 
+        // import Person from'./scripts/export-default-class.js';
+        //atau
+        import {default as Person} from './scripts/export-default-class.js';
+
+        const person = new Person('ucup');
+        person.sayHi();
+    </script>
+</body>
+</html>
